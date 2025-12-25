@@ -41,6 +41,26 @@ Windows Forms tabanlı, Gemini API kullanan modern bir chatbot uygulaması.
 4. **Projeyi derleyin ve çalıştırın:**
    - `F5` tuşuna basın veya `Build > Build Solution` menüsünden derleyin
 
+## 📦 Masaüstüne Kopyalama (Dağıtım)
+
+Uygulamayı masaüstünde çalıştırmak için tüm bağımlılıkları (DLL'ler) birlikte kopyalamanız gerekir.
+
+### Yöntem 1: Otomatik Script (Önerilen)
+
+1. Projeyi Visual Studio'da **Build > Build Solution** ile derleyin
+2. Proje kök dizinindeki `CopyToDesktop.bat` dosyasına çift tıklayın
+3. Script tüm gerekli dosyaları masaüstüne `ChatBot` klasörüne kopyalayacaktır
+4. Masaüstündeki `ChatBot` klasöründen `ChatBot.exe` dosyasını çalıştırabilirsiniz
+
+### Yöntem 2: Manuel Kopyalama
+
+1. Projeyi Visual Studio'da **Build > Build Solution** ile derleyin
+2. `ChatBot\bin\Debug` klasörünün **tamamını** kopyalayın
+3. Masaüstüne veya istediğiniz yere yapıştırın
+4. `ChatBot.exe` dosyasını çalıştırın
+
+**Önemli:** Sadece `.exe` dosyasını kopyalamayın! Tüm klasörü kopyalayın çünkü NuGet paketleri (System.Text.Json.dll vb.) gereklidir.
+
 ## 📖 Kullanım
 
 1. Uygulamayı başlatın
